@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Livre Brasil - Página para estudos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-[#FFF059] flex items-center">
+      <div class="">
+        <img
+          class="ml-1 w-17 p-2"
+          src="./assets/logo_nav.png"
+          alt="Logo Mercado Livre 25 anos"
+        />
+      </div>
+
+      <div class="flex justify-center items-center w-full">
+        <div class="relative w-[90%] mx-auto">
+          <i class="absolute left-3 top-4 fa fa-search text-gray-400"></i>
+          <input
+            class="h-12 pl-10 px-2 w-full"
+            type="text"
+            id="search"
+            placeholder="Estou buscando..."
+          />
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <!-- Botão do menu hambúrguer -->
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </label>
+
+        <!-- Botão carrinho -->
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg
+            class="w-6 h-6 mr-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l3-8H6.4M7 13L5 5H2m5 13a1 1 0 110 2 1 1 0 010-2zm10 0a1 1 0 110 2 1 1 0 010-2z"
+            />
+          </svg>
+        </label>
+      </div>
+    </header>
+
+    <!-- Endereco -->
+    <section class="bg-[#FFF059] flex items-center justify-between p-5">
+      <div class="flex items-center">
+        <i class="fas fa-map-marker-alt text-[#3C3C38] mr-4"></i>
+        <h2 class="text-[#3C3C38]">Enviar para Rua Sao Paulo 200</h2>
+      </div>
+      <i class="fas fa-arrow-right text-[#3C3C38]"></i>
+    </section>
+  </body>
+</html>
