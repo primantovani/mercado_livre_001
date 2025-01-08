@@ -12,11 +12,19 @@
     />
   </head>
   <body>
-    <header class="bg-[#FFF059] flex items-center">
-      <div class="">
+    <header class="bg-[#FCE300] flex items-center">
+      <div class="logo-container">
+        <!--Logo celulares e tablets-->
         <img
-          class="ml-1 w-17 p-2"
+          class="logo-mobile block lg:hidden ml-1 w-17 p-2"
           src="./assets/logo_nav.png"
+          alt="Logo Mercado Livre 25 anos"
+        />
+
+        <!--Logo para desktops-->
+        <img
+          class="logo-descktop hidden lg:block ml-1 w-17 p-2"
+          src="./assets/mercado-livre-desktop.png"
           alt="Logo Mercado Livre 25 anos"
         />
       </div>
@@ -33,7 +41,7 @@
         </div>
       </div>
 
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-4 lg:hidden">
         <!-- Botão do menu hambúrguer -->
         <label for="menu-toggle" class="cursor-pointer">
           <svg
@@ -70,15 +78,142 @@
           </svg>
         </label>
       </div>
+      <!--Bannner descktop-->
+      <div class="hidden lg:block p-4">
+        <img src="./assets/banner_1.png" alt="Assine meli+" />
+      </div>
     </header>
 
     <!-- Endereco -->
-    <section class="bg-[#FFF059] flex items-center justify-between p-5">
-      <div class="flex items-center">
-        <i class="fas fa-map-marker-alt text-[#3C3C38] mr-4"></i>
+    <section class="bg-[#FCE300] flex items-center justify-between p-2">
+      <div class="flex items-center lg:w-44">
+        <i class="fas fa-map-marker-alt text-[#3C3C38] mr-4 lg:text-4xl"></i>
         <h2 class="text-[#3C3C38]">Enviar para Rua Sao Paulo 200</h2>
       </div>
-      <i class="fas fa-arrow-right text-[#3C3C38]"></i>
-    </section>
-  </body>
+      <i class="fas fa-arrow-right text-[#3C3C38] lg:hidden"></i>
+
+      <!-- Links -->
+      <div class="space-x-16 mx-auto hidden md:flex">
+        <div class="">
+          <ul class="flex space-x-4">
+            <li>Categorias</li>
+            <li>Ofertas</li>
+            <li>Cupons</li>
+            <li>Supermercado</li>
+            <li>Vender</li>
+            <li>Contato</li>
+          </ul>
+        </div>
+
+        <div class="">
+          <ul class="flex space-x-4">
+            <li>Usuário</li>
+            <li>Compras</li>
+            <li>Favoritos</li>
+          </ul>
+        </div>
+
+        <div class="flex">
+          
+          <!-- Botão sino -->
+          <label for="menu-toggle" class="cursor-pointer">
+            <svg
+            class="w-6 h-6 mr-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            >
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11c0-3.071-1.64-5.64-4.5-6.32V4a1.5 1.5 0 00-3 0v.68C7.64 5.36 6 7.929 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a3 3 0 01-6 0h6z"
+            />
+          </svg>
+        </label>
+
+        <!-- Botão carrinho -->
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg
+            class="w-6 h-6 mr-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l3-8H6.4M7 13L5 5H2m5 13a1 1 0 110 2 1 1 0 010-2zm10 0a1 1 0 110 2 1 1 0 010-2z"
+            />
+          </svg>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class=" bg-gradient-to-b from-[#FCE300] to-[#E8E8E8]">
+  <div class="relative w-[95%] mx-auto overflow-hidden rounded-md ">
+    <!-- Radio buttons para controle -->
+    <input type="radio" name="carousel" id="slide1" class="hidden" checked>
+    <input type="radio" name="carousel" id="slide2" class="hidden">
+    <input type="radio" name="carousel" id="slide3" class="hidden">
+  
+    <!-- Contêiner dos slides -->
+    <div class="flex transition-transform duration-500">
+      <!-- Slide 1 -->
+      <label for="slide3" class="cursor-pointer flex-none w-full h-64">
+        <img src="./assets/banner_001.png" alt="Slide 1" class="w-full h-full object-cover">
+      </label>
+      <!-- Slide 2 -->
+      <label for="slide1" class="cursor-pointer flex-none w-full h-64">
+        <img src="./assets/banner_002.png" alt="Slide 2" class="w-full h-full object-cover">
+      </label>
+      <!-- Slide 3 -->
+      <label for="slide2" class="cursor-pointer flex-none w-full h-64">
+        <img src="./assets/banner_003.png" alt="Slide 3" class="w-full h-full object-cover">
+      </label>
+    </div>
+  
+    <!-- Controles -->
+    <div class="absolute inset-x-0 bottom-4 flex justify-center space-x-2">
+      <label for="slide1" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+      <label for="slide2" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+      <label for="slide3" class="w-4 h-4 bg-gray-400 rounded-full cursor-pointer"></label>
+    </div>
+  </div>
+  
+  <style>
+    /* CSS para mover os slides */
+    [id="slide1"]:checked ~ div > label:nth-child(1) {
+      transform: translateX(0%);
+    }
+    [id="slide2"]:checked ~ div > label:nth-child(2) {
+      transform: translateX(-100%);
+    }
+    [id="slide3"]:checked ~ div > label:nth-child(3) {
+      transform: translateX(-200%);
+    }
+  </style>
+  </section>
+
+  <section class="bg-[#E8E8E8] flex justify-center items-center">
+    <button class="bg-white text-sm px-2 py-1 rounded-md m-4 w-[95%]">
+      <span class="text-[#1AA659]">Frete grátis</span> em milhões de produtos a partir de R$ 79.
+    </button>
+  </section>
+
+  <section>
+    <div>
+      <h1>Visto recentemente</h1>
+      <img src="./assets/boneca.png" alt="">
+    </div>
+  </section>
+
+  
+  
+  
+</body>
 </html>
