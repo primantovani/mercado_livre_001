@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-[#E8E8E8]">
     <header class="bg-[#FCE300] flex items-center">
       <div class="logo-container">
         <!--Logo celulares e tablets-->
@@ -93,7 +93,7 @@
       <i class="fas fa-arrow-right text-[#3C3C38] lg:hidden"></i>
 
       <!-- Links -->
-      <div class="space-x-16 mx-auto hidden md:flex">
+      <div class="text-sm space-x-16 mx-auto hidden md:flex">
         <div class="">
           <ul class="flex space-x-4">
             <li>Categorias</li>
@@ -211,51 +211,307 @@
   </div>
 
 
-  <section class=" bg-[#E8E8E8] space-x-4 space-y-4 justify-between px-8 flex flex-col items-center md:flex-row ms:flex">
-    <div>
-      
+  <section class="bg-[#E8E8E8] px-8 py-4">
+    <div class="flex overflow-x-auto space-x-6 scrollbar-hide">
+      <div class="bg-white rounded-md w-44 flex-none p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Visto recentemente</h1>
+        <img class="p-4 w-full" src="./assets/boneca_001.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 419</h1>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+  
+      <div class="bg-white rounded-md w-44 flex-none p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Compre seu carrinho</h1>
+        <img class="p-4 w-full" src="./assets/produtos.png" alt="">
+      </div>
+  
+      <div class="bg-white rounded-md w-44 flex-none flex flex-col items-center justify-center p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Menos de R$100</h1>
+        <img class="w-44 h-44 " src="./assets/image_19.png" alt="">
+        <h2 class="text-blue-500 text-sm text-center ">MENOS DE R$100</h2>
+        <h1 class="text-sm text-center mb-2 py-4">Preços baixos.</h1>
+        <button class="bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Produtos</button>
+      </div>
+  
+      <div class="bg-white rounded-md w-44 flex-none flex flex-col items-center justify-center p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Compra garantida</h1>
+        <img class="w-44 h-44 mb-2" src="./assets/image_20.png" alt="">
+        <h2 class="text-blue-500 text-sm text-center mb-1">COMPRA GARANTIDA</h2>
+        <h1 class="text-sm text-center mb-2 py-4">Cuidamos de você</h1>
+        <button class="bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Como funciona</button>
+      </div>
+  
+      <div class="bg-white rounded-md w-44 flex-none flex flex-col items-center justify-center p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Lojas oficiais</h1>
+        <img class="w-44 h-44 mb-2" src="./assets/image_21.png" alt="">
+        <h2 class="text-blue-500 text-sm text-center mb-1">LOJAS OFICIAIS</h2>
+        <h1 class="text-sm text-center mb-2 py-4">Marcas preferidas.</h1>
+        <button class="bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Mostrar lojas</button>
+      </div>
+
+      <div class="bg-white rounded-md w-44 flex-none flex flex-col items-center justify-center p-4 shadow-md">
+        <h1 class="text-base font-semibold mb-2">Compra garantida</h1>
+        <img class="w-44 h-44 mb-2" src="./assets/image_20.png" alt="">
+        <h2 class="text-blue-500 text-sm text-center mb-1">COMPRA GARANTIDA</h2>
+        <h1 class="text-sm text-center mb-2 py-4">Cuidamos de você</h1>
+        <button class="bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Como funciona</button>
+      </div>
     </div>
-    <div class="bg-white rounded-md w-44 p-2 shadow-md">
-      <h1>Visto recentemente</h1>
-      <img class="p-4" src="./assets/boneca_001.png" alt="">
-      <h2 class="text-sm text-gray-300">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
-      <h1 class="text-sm" >R$ 419</h1>
-      <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+  </section>
+  
+  <!-- Tailwind custom utility classes -->
+  <style>
+    .scrollbar-hide {
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  </style>
+
+  <h1 class="border border-gray-200 p-2 font-semibold hidden sm:block bg-white w-[95%] items-center justify-center mx-auto rounded-t-md">Inspirado no último visto</h1>
+  
+  <section class="w-[95%] items-center items-center justify-center mx-auto rounded-md bg-white lg:flex ">
+    <h1 class="border border-gray-200 p-4 font-semibold lg:hidden">Inspirado no último visto</h1>
+    <div class="flex bg-gray-400  justify-center mx-auto">
+      <div class="border border-gray-200 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full " src="./assets/image_boneca_01.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 258</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image_boneca_02.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 258</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+    </div>
+
+    <div class="flex bg-gray-400 justify-center mx-auto">
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image_boneca_03.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 258</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image_boneca_04.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Bebê Reborn Realista Fio a Fio 100% Silicone Banho</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 258</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=" lg:flex justify-between items-center justify-center mx-auto p-8 space-y-4">
+    <img class="rounded-md " src="./assets/image 35.png" alt="Aproveite Liquida Férias">
+    <img class="rounded-md " src="./assets/image 36.png" alt="Preço Baixo e Qualidade">
+  </section>
+
+  <section class="rounded-t-md w-[95%] items-center justify-center mx-auto m-4 shadow-md">
+    <div class="rounded-t-md flex bg-gradient-to-r from-[#532082] to-[#9C1387]">
+      <img class="w-18 p-2" src="./assets/meli.png" alt="Logo meli+">
+      <div class="flex flex-col justify-center text-white text-sm lg:flex-row lg:items-center lg:gap-2 lg:text-base lg:w-[66%]">
+        <h1>Assine a partir de</h1>
+        <h1>R$ 9,90/mês</h1>
+      </div>
+      <div class="hidden lg:block relative ">
+        <button class="bg-white/20 hover:bg-white/90 text-white font-medium m-8 px-4 rounded shadow-md transition duration-300 ml-auto ">
+          Assinar o Meli+
+        </button>
+      </div>
+    
+    </div>
+
+      <div>
+        <h2 class="text-sm p-4 bg-white font-semibold">Economize em frete, compras e pagamentos, e faça seu dinheiro render</h2>
+      </div>
+
+
+    <div class="bg-white shadow-md lg:flex lg:text-sm lg:rounded-b-md">
+      <div class="flex w-[90%] items-center justify-center mx-auto p-4">
+        <img class="shadow-md rounded-md w-[15%] mr-4" src="./assets/9c07ed2cc72438b594079d7736509af6.jpg" alt="">
+        <h2 class="">Frete grátis em milhões de produtos a partir de R$ 29</h2>
+      </div>
+  
+      <div class="flex w-[90%] items-center justify-center p-4">
+        <img class="shadow-md rounded-md w-[15%] mr-4" src="./assets/9c07ed2cc72438b594079d7736509af6.jpg" alt="">
+        <h2 class="">Até 3 parcelas extras sem juros</h2>
+      </div>
+  
+      <div class="flex w-[90%] items-center justify-center mx-auto p-4">
+        <img class="shadow-md rounded-md w-[15%] mr-4" src="./assets/9c07ed2cc72438b594079d7736509af6.jpg" alt="">
+        <h2 class="">Cashback em compras e pagamentos</h2>
+      </div>
+  
+      <div class="flex w-[90%] items-center justify-center mx-auto p-4">
+        <img class="shadow-md rounded-md w-[15%] mr-4" src="./assets/9c07ed2cc72438b594079d7736509af6.jpg" alt="">
+        <h2 class="">Seu dinheiro rende 105% do CDI no Mercado Pago</h2>
+      </div>
 
     </div>
     
-    <div class="bg-white rounded-md w-44 p-2 shadow-md">
-      <h1>Compre seu carrinho</h1>
-      <img class="p-4 w-52 " src="./assets/produtos.png" alt="">
+    <div class="border-t border-gray-300 rounded-b-lg shadow-md lg:hidden">
+      <h1 class="p-4 bg-white text-blue-500">Assinar o Meli+</h1>
     </div>
 
-    <div class="bg-white rounded-md w-44 flex flex-col items-center justify-center shadow-md">
-      <img class="w-32 h-42" src="./assets/image_19.png" alt="">
-      <h2 class="text-blue-500 text-sm text-center">MENOS DE R$100</h2>
-      <h1 class="text-sm text-center">Preços baixos.</h1>
-      <button class="m-2 bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Mostrar produtos</button>
+  </section>
+
+
+  <h1 class="border border-gray-200 p-2 font-semibold hidden sm:block bg-white w-[95%] items-center justify-center mx-auto rounded-t-md">Relacionado com suas visitas em Animais</h1>
+  
+  <section class="w-[95%] items-center items-center justify-center mx-auto bg-white lg:flex  ">
+    <h1 class="border border-gray-200 p-4 font-semibold lg:hidden">Relacionado com suas visitas em Animais</h1>
+    <div class="flex bg-gray-400  justify-center mx-auto">
+      <div class="border border-gray-200 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full " src="./assets/image 27.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Mochila Pet Visão Panorâmica Inteligente</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 63,11</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
+
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image 28.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Cadencia Cadeirinha Para Pet</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 68,90</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
     </div>
 
-    <div class="bg-white rounded-md w-44 flex flex-col items-center justify-center shadow-md">
-      <img class="w-32 h-42" src="./assets/image_20.png" alt="">
-      <h2 class="text-blue-500 text-sm text-center">COMPRA GARANTIDA</h2>
-      <h1 class="text-sm text-center">Cuidamos de você</h1>
-      <button class="m-2 bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Como funciona</button>
+    <div class="flex bg-gray-400 justify-center mx-auto">
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image 29.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Mochila Pet Visão Panorâmica Inteligente</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 65,35</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
 
+      <div class="border border-gray-200 p-4 bg-white w-44 p-4 w-[50%]">
+        <img class="p-2 w-full" src="./assets/image 30.png" alt="">
+        <h2 class="text-sm text-gray-500 mb-2">Cadeira Assento De Pet Carro</h2>
+        <h1 class="text-sm font-semibold mb-1">R$ 76,90</h1>
+        <h3 class="text-sm font-semibold mb-1"></h3class>em 8x R$ 32,31 sem juros</h3>
+        <h3 class="text-sm text-[#1AA659]">Frete grátis</h3>
+      </div>
     </div>
 
-    <div class="bg-white rounded-md w-44 flex flex-col items-center justify-center shadow-md">
-      <img class="w-32 h-42" src="./assets/image_21.png" alt="">
-      <h2 class="text-blue-500 text-sm text-center">LOJAS OFICIAIS</h2>
-      <h1 class="text-sm text-center">Suas marcas preferidas.</h1>
-      <button class="m-2 bg-[#3483FA] text-white px-5 py-1 rounded-md text-sm">Mostrar lojas</button>
-
-    </div>
-    
   </section>
 
   
   
+  <section class="lg:hidden bg-[#E8E8E8]">
+    <div class="flex overflow-x-auto scrollbar-hide">
+      
+      <div class="justify-center items-center bg-white flex-none shadow-md flex flex-col p-4 w-full mt-4 ">
+        <img class="mx-auto" src="./assets/image 37.png" alt="">
+        <h2 class="text-base text-gray-500 mb-2 text-center">Escolha como pagar</h2>
+        <h1 class="text-sm text-gray-400 text-center mb-1">Com Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x sem cartão com a Linha de Crédito.</h1>
+        <h3 class="text-sm text-[#0559EB] text-center">Como pagar com Mercado Pago</h3>
+      </div>
+  
+      <div class="justify-center items-center bg-white flex-none shadow-md flex flex-col p-4 w-full mt-4">
+        <img class="mx-auto" src="./assets/image 38.png" alt="">
+        <h2 class="text-base text-gray-500 mb-2 text-center">Frete grátis a partir de R$ 79</h2>
+        <h1 class="text-sm text-gray-400 text-center mb-1">Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares de produtos.</h1>
+      </div>
+  
+      <div class="justify-center items-center bg-white flex-none shadow-md flex flex-col p-4 w-full mt-4">
+        <img class="mx-auto" src="./assets/image 39.png" alt="">
+        <h2 class="text-base text-gray-500 mb-2 text-center">Segurança, do início ao fim</h2>
+        <h1 class="text-sm text-gray-400 text-center mb-1">Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.</h1>
+        <h3 class="text-sm text-[#0559EB] text-center">Como te protegemos</h3>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Tailwind custom utility classes -->
+  <style>
+    .scrollbar-hide {
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  </style>
+
+<section class="hidden sm:block bg-[#E8E8E8]">
+  <div class="flex justify-between w-full bg-white mt-4">
+
+    <div class="flex justify-center items-center bg-white shadow-md flex-col p-4 w-full mx-2">
+      <img class="mx-auto" src="./assets/image 37.png" alt="">
+      <h2 class="text-base text-gray-500 mb-2 text-center">Escolha como pagar</h2>
+      <h1 class="text-sm text-gray-400 text-center mb-1">
+        Com Mercado Pago, você paga com cartão, boleto ou Pix. Você também pode pagar em até 12x sem cartão com a Linha de Crédito.
+      </h1>
+      <h3 class="text-sm text-[#0559EB] text-center">Como pagar com Mercado Pago</h3>
+    </div>
+
+    <div class="flex justify-center items-center bg-white shadow-md flex-col p-4 w-full mx-2">
+      <img class="mx-auto" src="./assets/image 38.png" alt="">
+      <h2 class="text-base text-gray-500 mb-2 text-center">Frete grátis a partir de R$ 79</h2>
+      <h1 class="text-sm text-gray-400 text-center mb-1">
+        Ao se cadastrar no Mercado Livre, você tem frete grátis em milhares de produtos.
+      </h1>
+    </div>
+
+    <div class="flex justify-center items-center bg-white shadow-md flex-col p-4 w-full mx-2">
+      <img class="mx-auto" src="./assets/image 39.png" alt="">
+      <h2 class="text-base text-gray-500 mb-2 text-center">Segurança, do início ao fim</h2>
+      <h1 class="text-sm text-gray-400 text-center mb-1">
+        Você não gostou do que comprou? Devolva! No Mercado Livre não há nada que você não possa fazer, porque você está sempre protegido.
+      </h1>
+      <h3 class="text-sm text-[#0559EB] text-center">Como te protegemos</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="lg:hidden flex bg-[#FFF059] items-center">
+  <img class=" ml-12 bg-[#FCE300] rounded-xl shadow-md m-4" src="./assets/logo.png" alt="">
+  <h1 class="">Compre e venda com app!</h1>
+</section>
+
+<section class="bg-white p-2 border-b">
+  <ul class="grid grid-cols-2 gap-4 text-sm m-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-12">
+    <li class="">Minha conta</li>
+    <li class="">Histórico</li>
+    <li class="">Favoritos</li>
+    <li class="">Categorias</li>
+    <li class="">Contato</li>
+    <li class="">Programa de Afiliados</li>
+    <li class="">Compras</li>
+    <li class="">Ofertas</li>
+    <li class="">Lojas oficiais</li>
+    <li class="">Meli+</li>
+    <li class="">Vender</li>
+    <li class="">Black Friday</li>
+  </ul>
+</section>
+
+<nav class="bg-white text-sm text-gray-400 p-8">
+  <h1>Copyright © 1999-2025 Ebazar.com.br LTDA.</h1>
+  <h1>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.</h1>
+</nav>
+
+
+
+  
+
   
 </body>
 </html>
